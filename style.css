@@ -18,7 +18,7 @@ body {}
 }
 
 .header {
-    padding: 2em;
+    padding: 1em;
     background-color: var(--secondaryColor);
     grid-column: 2 / 3;
 }
@@ -26,18 +26,20 @@ body {}
 .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
 .search {
     width: 100%;
     position: relative;
+    padding-left: 40px;
 }
 
 div.search > img.icon {
     position: inherit;
     top: 10px;
-    
+    padding-right: 15px;
 }
 
 
@@ -50,6 +52,32 @@ input[type=text] {
     padding: 8px;
     width: min(80%, 700px);
     position: relative;
+}
+
+.account {
+    display: flex;
+    width: 411px;
+    align-items: center;
+}
+
+
+.icon-avatar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p.name {
+    margin-left: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+img.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .sidebar {
