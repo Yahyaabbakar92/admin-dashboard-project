@@ -9,15 +9,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    /* height: 100%; */
-}
+body {}
 
 .container {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
-    /* height: 100%; */
 }
 
 .header {
@@ -32,19 +29,27 @@ body {
 }
 
 
+.search {
+    width: 100%;
+    position: relative;
+}
+
 div.search > img.icon {
-    /* position: relative;
-    top: 33px; */
-    /* padding-right: 15px; */
+    position: inherit;
+    top: 10px;
+    
 }
 
 
 div.search > label {}
 
 input[type=text] {
-    /* padding-right: 400px;
-    width: min(80%, 800px);
-    margin-left: 45px; */
+    background-color: var(--tertiaryColor);
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: min(80%, 700px);
+    position: relative;
 }
 
 .sidebar {
