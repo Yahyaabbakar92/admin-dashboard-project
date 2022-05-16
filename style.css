@@ -150,6 +150,27 @@ span {
     align-items: center;
 }
 
+.sidebar > ul {
+    list-style-type: none;
+}
+
+.nav-links > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.nav-links > :first-child {
+    padding-top: 80px;
+}
+
+.nav-links > div > img, 
+li {
+    cursor: pointer;
+}
+
 .title > h1 {
     font-size: 1.7em;
 }
