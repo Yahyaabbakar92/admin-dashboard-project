@@ -11,8 +11,6 @@
     --shadowOfBoxes : 0px 10px 20px -5px rgba(0,0,0,0.25);
 }
 
-body {}
-
 .container {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -47,8 +45,6 @@ div.search > img.icon {
     cursor: pointer;
 }
 
-
-div.search > label {}
 
 input[type=text] {
     background-color: var(--tertiaryColor);
@@ -145,6 +141,17 @@ span {
     padding: 2em;
     background-color: var(--mainColor); 
     grid-row: 1 / 3;
+    color: var(--secondaryColor)
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title > h1 {
+    font-size: 1.7em;
 }
 
 .main-content {
