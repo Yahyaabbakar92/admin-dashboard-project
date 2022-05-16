@@ -8,6 +8,7 @@
     --profileColor: #fb923c;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    --shadowOfBoxes : 0px 10px 20px -5px rgba(0,0,0,0.25);
 }
 
 body {}
@@ -22,6 +23,8 @@ body {}
     padding: 1em;
     background-color: var(--secondaryColor);
     grid-column: 2 / 3;
+    box-shadow: var(--shadowOfBoxes);
+    z-index: 1;
 }
 
 .top {
@@ -41,6 +44,7 @@ div.search > img.icon {
     position: inherit;
     top: 10px;
     padding-right: 15px;
+    cursor: pointer;
 }
 
 
@@ -69,33 +73,72 @@ input[type=text] {
     justify-content: space-around;
 }
 
+.icon-avatar > .icon {
+    cursor: pointer;
+}
+
 .account > p.name {
     margin-left: 20px;
     width: 100%;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 img.avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding-top: 1em;
 }
 
 .profile {
     display: flex;
+    align-items: center;
+    width: min(40%,500px);
 }
 
 .profile > img.avatar {
     width: 75px;
     height: 75px;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+.profile-name {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.profile-name > p.name {
+    font-size: 1.5em;
+}
+
+span {
+    font-size: 1.4rem;
+}
+
+.buttons {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    width: 100px;
+    padding: 0.6em;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
 }
 
 .sidebar {
